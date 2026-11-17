@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Idea 001 · Scan on open</title>
+<link rel="stylesheet" href="style.css?v=23">
+</head><body>
+<header class="top"><a class="mark" href="index.html">Case study on Payments app<span> · by Sahil Chaudhary</span></a></header>
+<nav class="tabs" aria-label="Sections"><div class="seg" role="tablist"><a role="tab" data-g="cases" href="index.html" aria-selected="false">Case studies</a><a role="tab" data-g="ideas" href="idea-001.html" aria-selected="true">Ideas</a></div>
+<div class="pills" data-g="cases" hidden><a class="pill" href="index.html">Overview</a><a class="pill" href="apple-pay.html"><svg class="lg ap-pill" width="46" height="46" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Apple Pay"><path d="M2.15 4.318a42.16 42.16 0 0 0-.454.003c-.15.005-.303.013-.452.04a1.44 1.44 0 0 0-1.06.772c-.07.138-.114.278-.14.43-.028.148-.037.3-.04.45A10.2 10.2 0 0 0 0 6.222v11.557c0 .07.002.138.003.207.004.15.013.303.04.452.027.15.072.291.142.429a1.436 1.436 0 0 0 .63.63c.138.07.278.115.43.142.148.027.3.036.45.04l.208.003h20.194l.207-.003c.15-.004.303-.013.452-.04.15-.027.291-.071.428-.141a1.432 1.432 0 0 0 .631-.631c.07-.138.115-.278.141-.43.027-.148.036-.3.04-.45.002-.07.003-.138.003-.208l.001-.246V6.221c0-.07-.002-.138-.004-.207a2.995 2.995 0 0 0-.04-.452 1.446 1.446 0 0 0-1.2-1.201 3.022 3.022 0 0 0-.452-.04 10.448 10.448 0 0 0-.453-.003zm0 .512h19.942c.066 0 .131.002.197.003.115.004.25.01.375.032.109.02.2.05.287.094a.927.927 0 0 1 .407.407.997.997 0 0 1 .094.288c.022.123.028.258.031.374.002.065.003.13.003.197v11.552c0 .065 0 .13-.003.196-.003.115-.009.25-.032.375a.927.927 0 0 1-.5.693 1.002 1.002 0 0 1-.286.094 2.598 2.598 0 0 1-.373.032l-.2.003H1.906c-.066 0-.133-.002-.196-.003a2.61 2.61 0 0 1-.375-.032c-.109-.02-.2-.05-.288-.094a.918.918 0 0 1-.406-.407 1.006 1.006 0 0 1-.094-.288 2.531 2.531 0 0 1-.032-.373 9.588 9.588 0 0 1-.002-.197V6.224c0-.065 0-.131.002-.197.004-.114.01-.248.032-.375.02-.108.05-.199.094-.287a.925.925 0 0 1 .407-.406 1.03 1.03 0 0 1 .287-.094c.125-.022.26-.029.375-.032.065-.002.131-.002.196-.003zm4.71 3.7c-.3.016-.668.199-.88.456-.191.22-.36.58-.316.918.338.03.675-.169.888-.418.205-.258.345-.603.308-.955zm2.207.42v5.493h.852v-1.877h1.18c1.078 0 1.835-.739 1.835-1.812 0-1.07-.742-1.805-1.808-1.805zm.852.719h.982c.739 0 1.161.396 1.161 1.089 0 .692-.422 1.092-1.164 1.092h-.979zm-3.154.3c-.45.01-.83.28-1.05.28-.235 0-.593-.264-.981-.257a1.446 1.446 0 0 0-1.23.747c-.527.908-.139 2.255.374 2.995.249.366.549.769.944.754.373-.014.52-.242.973-.242.454 0 .586.242.98.235.41-.007.667-.366.915-.733.286-.417.403-.82.41-.841-.007-.008-.79-.308-.797-1.209-.008-.754.615-1.113.644-1.135-.352-.52-.9-.578-1.09-.593a1.123 1.123 0 0 0-.092-.002zm8.204.397c-.99 0-1.606.533-1.652 1.256h.777c.072-.358.369-.586.845-.586.502 0 .803.266.803.711v.309l-1.097.064c-.951.054-1.488.484-1.488 1.184 0 .72.548 1.207 1.332 1.207.526 0 1.032-.281 1.264-.727h.019v.659h.788v-2.76c0-.803-.62-1.317-1.591-1.317zm1.94.072l1.446 4.009c0 .003-.073.24-.073.247-.125.41-.33.571-.711.571-.069 0-.206 0-.267-.015v.666c.06.011.267.019.335.019.83 0 1.226-.312 1.568-1.283l1.5-4.214h-.868l-1.012 3.259h-.015l-1.013-3.26zm-1.167 2.189v.316c0 .521-.45.917-1.024.917-.442 0-.731-.228-.731-.579 0-.342.278-.56.769-.593z"/></svg><span class=sr>Apple Pay</span></a><a class="pill" href="wise.html"><svg class="lg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Wise"><path d="M6.488 7.469 0 15.05h11.585l1.301-3.576H7.922l3.033-3.507.01-.092L8.993 4.48h8.873l-6.878 18.925h4.706L24 .595H2.543l3.945 6.874Z"/></svg>Wise</a><a class="pill" href="revolut-air.html"><svg class="lg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Revolut"><path d="M20.9133 6.9566C20.9133 3.1208 17.7898 0 13.9503 0H2.424v3.8605h10.9782c1.7376 0 3.177 1.3651 3.2087 3.043.016.84-.2994 1.633-.8878 2.2324-.5886.5998-1.375.9303-2.2144.9303H9.2322a.2756.2756 0 0 0-.2755.2752v3.431c0 .0585.018.1142.052.1612L16.2646 24h5.3114l-7.2727-10.094c3.6625-.1838 6.61-3.2612 6.61-6.9494zM6.8943 5.9229H2.424V24h4.4704z"/></svg>Revolut AIR</a><a class="pill" href="monzo.html"><svg class="lg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Monzo"><path d="M4.244 1.174a.443.443 0 00-.271.13l-3.97 3.97-.001.001c3.884 3.882 8.093 8.092 11.748 11.748v-8.57L4.602 1.305a.443.443 0 00-.358-.131zm15.483 0a.443.443 0 00-.329.13L12.25 8.456v8.568L24 5.275c-1.316-1.322-2.647-2.648-3.97-3.97a.443.443 0 00-.301-.131zM0 5.979l.002 10.955c0 .294.118.577.326.785l4.973 4.976c.28.282.76.083.758-.314V12.037zm23.998.003l-6.06 6.061v10.338c-.004.399.48.6.76.314l4.974-4.976c.208-.208.326-.49.326-.785z"/></svg>Monzo</a><a class="pill" href="phonepe.html"><svg class="lg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="PhonePe"><path d="M10.206 9.941h2.949v4.692c-.402.201-.938.268-1.34.268-1.072 0-1.609-.536-1.609-1.743V9.941zm13.47 4.816c-1.523 6.449-7.985 10.442-14.433 8.919C2.794 22.154-1.199 15.691.324 9.243 1.847 2.794 8.309-1.199 14.757.324c6.449 1.523 10.442 7.985 8.919 14.433zm-6.231-5.888a.887.887 0 0 0-.871-.871h-1.609l-3.686-4.222c-.335-.402-.871-.536-1.407-.402l-1.274.401c-.201.067-.268.335-.134.469l4.021 3.82H6.386c-.201 0-.335.134-.335.335v.67c0 .469.402.871.871.871h.938v3.217c0 2.413 1.273 3.82 3.418 3.82.67 0 1.206-.067 1.877-.335v2.145c0 .603.469 1.072 1.072 1.072h.938a.432.432 0 0 0 .402-.402V9.874h1.542c.201 0 .335-.134.335-.335v-.67z"/></svg>PhonePe</a><a class="pill" href="mpesa.html"><svg class="lg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Feature phone"><path fill-rule="evenodd" d="M7 1h10a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm1 3v8h8V4H8zm1 11h2v2H9v-2zm4 0h2v2h-2v-2zm-4 3h2v2H9v-2zm4 0h2v2h-2v-2z"/></svg>M-Pesa</a><a class="pill" href="findings.html">All findings</a></div><div class="pills" data-g="ideas"><a class="pill" href="idea-001.html" aria-current=page>New QR Concept</a><a class="pill" href="idea-002.html">Semi GenUI Concept</a><a class="pill" href="idea-003.html">Pending Concept</a></div></nav>
+
+<main>
+<style>
+main { max-width: 1240px; }
+.stage { display: grid; grid-template-columns: 1fr 380px 1fr; gap: 40px; align-items: center; margin: 8px 0 56px; }
+@media (max-width: 980px) { .stage { grid-template-columns: 1fr; } .stage .side { order: 2; } }
+.side h3 { font: 700 13px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 14px; }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.steps li { border: 1px solid var(--rule); background: var(--card); border-radius: 14px; padding: 12px 16px; opacity: .45; transition: opacity .3s, border-color .3s, transform .3s; font-size: 16px; }
+.steps li.on { opacity: 1; border-color: var(--stamp); transform: translateX(4px); }
+.steps li b { display: block; font: 700 16px var(--sans); margin-bottom: 2px; }
+.steps li .num { margin-right: 6px; }
+.right .why { font-size: 17px; min-height: 9em; }
+.right .why p { margin: 0 0 10px; }
+.ctl { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+.ctl button, .ctl label { font: 600 14px var(--sans); padding: 9px 14px; border-radius: 10px; border: 1px solid var(--rule);
+  background: var(--card); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+.ctl button.primary { background: var(--stamp); color: var(--card); border-color: var(--stamp); }
+.timing { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.timing div { background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 10px 12px; }
+.timing span { display: block; font: 500 12px var(--mono); color: var(--ink-2); }
+.timing b { font: 800 24px var(--sans); color: var(--stamp); }
+.testqr { display: flex; gap: 12px; align-items: center; margin-top: 14px; font-size: 14px; }
+.testqr .q { width: 92px; height: 92px; background: #fff; padding: 6px; border-radius: 6px; flex: none; cursor: zoom-in; }
+.testqr .q svg { width: 100%; height: 100%; display: block; }
+
+/* ---------- phone ---------- */
+.phone { width: 100%; max-width: 300px; aspect-ratio: 390/820; margin: 0 auto; border-radius: 52px; padding: 11px;
+  background: #0d0d0f; box-shadow: 0 0 0 2px #2a2a2e inset, 0 30px 70px -25px rgba(0,0,0,.5); }
+.scr { position: relative; width: 100%; height: 100%; border-radius: 42px; overflow: hidden; background: #f3f6fa; color: #0b1a33;
+  font: 400 13px/1.3 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
+.scr * { box-sizing: border-box; font-family: inherit; }
+.scr button { all: unset; cursor: pointer; box-sizing: border-box; }
+.view { position: absolute; inset: 0; display: flex; flex-direction: column; }
+.view[hidden] { display: none; }
+.sb { height: 46px; flex: none; display: flex; justify-content: space-between; align-items: center; padding: 6px 30px 0; font: 600 14px -apple-system, system-ui; position: relative; z-index: 3; }
+.sb::after { content: ""; position: absolute; left: 50%; top: 10px; width: 108px; height: 30px; margin-left: -54px; background: #000; border-radius: 20px; }
+.sb .ic { letter-spacing: 2px; font-size: 11px; }
+
+/* home */
+.cam { position: absolute; left: 0; right: 0; top: 0; height: 100%; overflow: hidden; background: linear-gradient(180deg, #d9f2fd, #eef8fe 70%, #f3f6fa); }
+.cam video { position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; filter: blur(22px) saturate(1.2); opacity: 0; transition: opacity .6s, filter .35s; }
+.cam.live video { opacity: 1; }
+.cam.mirror video { transform: scaleX(-1); }
+.cam .wash { position: absolute; inset: 0; background: rgba(235,247,254,.28); }
+.cam.found video { filter: blur(8px) saturate(1.2); }
+.ret { position: absolute; border: 2.5px solid #00baf2; border-radius: 12px; box-shadow: 0 0 0 999px rgba(0,30,70,.12); opacity: 0; transition: all .15s; pointer-events: none; z-index: 1; }
+.cam.found .ret { opacity: 1; }
+.topbar { position: relative; z-index: 2; display: flex; align-items: center; gap: 10px; padding: 6px 16px 10px; }
+.av { width: 34px; height: 34px; border-radius: 50%; background: #fff; display: grid; place-items: center; font-weight: 700; color: #002e6e; box-shadow: 0 1px 3px rgba(0,0,0,.12); position: relative; }
+.av::after { content: ""; position: absolute; right: -1px; bottom: -1px; width: 12px; height: 12px; border-radius: 50%; background: #00baf2; border: 2px solid #fff; }
+.logo { font: 800 24px/1 -apple-system, system-ui; letter-spacing: -.5px; color: #002e6e; flex: 1; text-align: center; margin-right: 34px; }
+.logo span { color: #00baf2; }
+.tb-i { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,.75); display: grid; place-items: center; font-size: 15px; color: #002e6e; }
+.scanpill { position: relative; z-index: 2; align-self: center; margin: 2px 0 12px; display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600;
+  padding: 6px 12px; border-radius: 99px; background: rgba(255,255,255,.82); color: #002e6e; box-shadow: 0 1px 4px rgba(0,0,0,.08); cursor: pointer; }
+.scanpill i { width: 7px; height: 7px; border-radius: 50%; background: #9aa6b5; font-style: normal; }
+.scanpill.live i { background: #12b76a; animation: pl 1.2s infinite; }
+@keyframes pl { 50% { opacity: .25; } }
+.home-scroll { position: relative; z-index: 2; flex: 1; overflow: hidden; padding: 0 10px 90px; display: flex; flex-direction: column; gap: 10px; }
+.card { background: rgba(255,255,255,.9); backdrop-filter: blur(6px); }
+.card { background: #fff; border-radius: 16px; padding: 14px 10px 12px; box-shadow: 0 1px 4px rgba(0,30,70,.07); margin-bottom: 12px; }
+.card h5 { margin: 0 6px 12px; font-size: 14px; font-weight: 700; color: #0b1a33; display: flex; justify-content: space-between; }
+.card h5 small { font-weight: 600; color: #00baf2; font-size: 12px; }
+.grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px 2px; }
+.gi { display: flex; flex-direction: column; align-items: center; gap: 7px; text-align: center; font-size: 11px; line-height: 1.2; color: #24324a; }
+.gi b { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; background: #e6f6fe; color: #002e6e; font-size: 20px; font-weight: 700; }
+.gi.primary b { background: #002e6e; color: #fff; }
+.promo { border-radius: 14px; height: 74px; background: linear-gradient(110deg, #002e6e, #0a58b8 60%, #00baf2); color: #fff; padding: 14px; font-size: 12px; margin-bottom: 12px; }
+.promo b { display: block; font-size: 15px; margin-bottom: 3px; }
+.navbar { position: absolute; left: 0; right: 0; bottom: 0; height: 84px; background: #fff; border-top: 1px solid #e5eaf0; display: flex; justify-content: space-around; align-items: flex-start; padding-top: 10px; font-size: 10.5px; color: #5b6b80; z-index: 3; }
+.navbar div { display: flex; flex-direction: column; align-items: center; gap: 3px; width: 60px; }
+.navbar .scanbtn { margin-top: -30px; }
+.navbar .scanbtn b { width: 58px; height: 58px; border-radius: 50%; background: #00baf2; color: #fff; display: grid; place-items: center; font-size: 24px; box-shadow: 0 6px 14px -4px rgba(0,120,190,.6); border: 4px solid #fff; }
+.navbar .scanbtn span { color: #002e6e; font-weight: 700; }
+
+/* sheet (QR found) */
+.sheet { position: absolute; left: 0; right: 0; bottom: 0; z-index: 5; background: #fff; border-radius: 22px 22px 0 0; padding: 10px 18px 28px;
+  box-shadow: 0 -12px 40px -10px rgba(0,30,70,.35); transform: translateY(105%); transition: transform .38s cubic-bezier(.2,.9,.3,1.12); }
+.sheet.show { transform: none; }
+.sheet .grab { width: 38px; height: 4px; border-radius: 4px; background: #d5dbe3; margin: 0 auto 14px; }
+.sheet .row { display: flex; gap: 12px; align-items: center; }
+.sheet .pa { width: 48px; height: 48px; border-radius: 50%; background: #e6f6fe; color: #002e6e; display: grid; place-items: center; font-size: 19px; font-weight: 700; flex: none; }
+.sheet .nm { flex: 1; min-width: 0; }
+.sheet .nm b { display: block; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sheet .nm em { font-style: normal; font-size: 12px; color: #5b6b80; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sheet .vf { font-size: 11.5px; font-weight: 600; color: #0b8a4f; margin-top: 3px; display: block; }
+.sheet .vf.warn { color: #b54708; }
+.sheet .x { font-size: 20px; color: #8a96a8; padding: 4px; }
+.sheet .acts { display: flex; gap: 10px; margin-top: 16px; }
+.btn { flex: 1; text-align: center; padding: 14px; border-radius: 14px; font-size: 15px; font-weight: 700; background: #00baf2; color: #fff; }
+.btn.ghost { background: #eef2f6; color: #002e6e; flex: .6; }
+.btn[aria-disabled=true] { opacity: .35; pointer-events: none; }
+
+/* pay */
+.pay { background: #fff; }
+.payhd { display: flex; align-items: center; gap: 10px; padding: 4px 16px 12px; font-size: 16px; font-weight: 700; }
+.payhd button { font-size: 22px; padding: 0 6px; color: #002e6e; }
+.payee { text-align: center; padding: 18px 20px 6px; }
+.payee .pa { width: 70px; height: 70px; border-radius: 50%; background: #e6f6fe; color: #002e6e; display: grid; place-items: center; font-size: 27px; font-weight: 700; margin: 0 auto 10px; }
+.payee b { font-size: 18px; display: block; }
+.payee em { font-style: normal; font-size: 12.5px; color: #5b6b80; display: block; margin-top: 2px; }
+.payee .vf { display: inline-block; margin-top: 8px; font-size: 11.5px; font-weight: 600; color: #0b8a4f; background: #e7f6ee; padding: 3px 9px; border-radius: 99px; }
+.amt { display: flex; justify-content: center; align-items: center; gap: 2px; margin: 30px 0 6px; font-size: 46px; font-weight: 700; color: #0b1a33; }
+.amt input { all: unset; width: 3.4ch; font: inherit; text-align: center; caret-color: #00baf2; }
+.note { text-align: center; }
+.note span { display: inline-block; font-size: 12px; color: #5b6b80; background: #f1f4f8; padding: 6px 14px; border-radius: 99px; }
+.from { margin: auto 16px 12px; display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid #e5eaf0; border-radius: 14px; }
+.from i { width: 34px; height: 34px; border-radius: 8px; background: #eef2f6; display: grid; place-items: center; font-style: normal; font-size: 15px; }
+.from span { flex: 1; font-size: 13px; } .from em { font-style: normal; color: #5b6b80; font-size: 11.5px; display: block; }
+.pay .btn { margin: 0 16px 26px; flex: none; display: block; }
+
+/* success */
+.ok { background: #002e6e; color: #fff; }
+.ok .mid { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; }
+.ok .tick { width: 84px; height: 84px; border-radius: 50%; background: #12b76a; display: grid; place-items: center; font-size: 42px; margin-bottom: 18px; animation: pop .45s cubic-bezier(.2,.9,.3,1.4); }
+@keyframes pop { from { transform: scale(.3); opacity: 0; } }
+.ok .big { font-size: 40px; font-weight: 700; }
+.ok p { margin: 6px 0 0; font-size: 14px; opacity: .9; }
+.ok .rcpt { margin: 22px 16px 0; background: rgba(255,255,255,.08); border-radius: 14px; padding: 12px 14px; font-size: 12px; text-align: left; width: calc(100% - 32px); }
+.ok .rcpt div { display: flex; justify-content: space-between; padding: 3px 0; opacity: .85; }
+.ok .btn { margin: 0 16px 26px; flex: none; display: block; background: #fff; color: #002e6e; }
+
+.idea section { margin-top: 44px; }
+.idea .risk td:first-child { font: 700 15px var(--sans); white-space: nowrap; }
+.idea .disc { font: 400 13px var(--mono); color: var(--ink-2); text-align: center; margin: -36px 0 40px; }
+</style>
+<style>
+.poc { text-align: center; }
+main { max-width: 1120px; }
+.bento { display: grid; grid-template-columns: 1fr 1.15fr; gap: 16px; margin-top: 22px; text-align: left; }
+@media (max-width: 860px) { .bento { grid-template-columns: 1fr; } }
+.bx { background: var(--card); border: 1px solid var(--rule); border-radius: 24px; padding: 28px; }
+.bx .bk { font: 700 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--stamp); margin: 0 0 14px; }
+.bx .bk.sm { color: var(--ink-2); margin: 28px 0 10px; }
+.prob { display: flex; flex-direction: column; }
+.prob .big { font: 700 28px/1.2 var(--sans); margin: 0; letter-spacing: -.01em; }
+.prob .est { font: 400 13px var(--mono); color: var(--ink-2); margin: 10px 0 0; }
+.today { list-style: none; padding: 0; margin: 0; counter-reset: t; display: grid; gap: 8px; }
+.today li { counter-increment: t; display: flex; align-items: center; gap: 12px; font: 500 17px var(--sans); padding: 10px 14px; border-radius: 12px; background: var(--paper); }
+.today li::before { content: counter(t); font: 600 13px var(--mono); color: var(--card); background: var(--ink-2); width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; flex: none; }
+.today li:nth-child(3) { outline: 2px dashed var(--stamp); outline-offset: -2px; }
+.prob .punch { margin: auto 0 0; padding-top: 24px; font: 400 18px/1.45 var(--serif); }
+.sol { text-align: center; }
+/* split stage: story left, big phone right */
+.poc { display: grid; grid-template-columns: minmax(0, 540px) auto; justify-content: center; gap: clamp(32px, 6vw, 96px); align-items: center; text-align: left; padding: 12px 0 24px; }
+.story { max-width: 540px; } .story .kicker, .story .note, .story p { text-align: left !important; margin-left: 0 !important; }
+.story h1 { font-size: clamp(30px, 3.6vw, 46px) !important; line-height: 1.08 !important; letter-spacing: -.015em; margin: 8px 0 0 !important; }
+.story .lbl { font: 700 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); margin: clamp(18px, 3.4vh, 34px) 0 10px; }
+.chain { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chain li { font: 500 15px var(--sans); padding: 7px 12px; border-radius: 99px; background: var(--card); border: 1px solid var(--rule); }
+.chain { gap: 6px 22px; } .chain li { position: relative; }
+.chain li + li::before { content: "→"; position: absolute; left: -18px; color: var(--ink-2); font-weight: 400; }
+.chain li { display: inline-flex; align-items: center; }
+.chain li + li { margin-left: 0; }
+.chain .pain { border: 2px dashed var(--stamp); color: var(--stamp); font-weight: 700; }
+.story .note { font: 400 13px var(--mono); color: var(--ink-2); margin: 10px 0 0; }
+.idea-l { font: 500 clamp(18px, 1.6vw, 21px)/1.45 var(--sans); margin: 0; }
+.try .cap { font: 700 18px var(--sans); color: var(--stamp); margin: 0 0 4px; min-height: 1.4em; text-align: left; }
+.try .sim { font: 400 14px var(--sans); color: var(--ink-2); margin: 0; text-align: left; }
+.try .sim a { cursor: pointer; }
+.r { opacity: 0; transform: translateY(10px); animation: rin .6s cubic-bezier(.2,.7,.2,1) forwards; }
+.r1 { animation-delay: .1s; } .r2 { animation-delay: .7s; } .r3 { animation-delay: 1.4s; } .r4 { animation-delay: 2s; }
+@keyframes rin { to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .r { animation: none; opacity: 1; transform: none; } }
+.pw { display: flex; align-items: center; justify-content: center; }
+.pw .phone { width: 300px; max-width: none; flex: none; transform-origin: top left; }
+.pw .ph-box { flex: none; }
+@media (min-width: 861px) {
+  body:has(.poc) .top { padding-top: clamp(10px, 2.4vh, 28px); } body:has(.poc) .tabs { padding-bottom: clamp(6px, 1.6vh, 28px); }
+  body:has(.poc) { height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
+  body:has(.poc) > .top { flex: none; width: 100%; }
+  body:has(.poc) > footer { display: none; }
+  body:has(.poc) > main { flex: 1; min-height: 0; width: 100%; padding-bottom: 0; display: flex; max-width: 1180px; }
+  .poc { flex: 1; min-height: 0; }
+  .pw { height: 100%; min-height: 0; }
+}
+@media (max-width: 860px) { .poc { grid-template-columns: 1fr; } .pw { order: 2; } }
+
+.sol .lede { font-size: 17px; margin: 0 auto 20px; max-width: 36ch; }
+.poc h1 { margin: 6px 0 4px; }
+.poc .cap { font: 600 16px var(--sans); margin: 18px 0 6px; min-height: 1.5em; }
+.poc .sim { font: 400 14px var(--sans); color: var(--ink-2); }
+.poc .sim a { cursor: pointer; }
+.scr { font-size: 12px; } .grid4 .gi b { width: 40px; height: 40px; font-size: 17px; border-radius: 12px; } .gi { font-size: 10px; }
+.card { padding: 12px 8px 10px; margin-bottom: 0; } .promo { margin-bottom: 0; height: 64px; padding: 11px 14px; } .card h5 { font-size: 13px; margin-bottom: 10px; }
+.navbar { height: 70px; } .navbar .scanbtn b { width: 50px; height: 50px; }
+</style>
+
+<div class="poc">
+  <div class="story">
+    <p class="kicker r r0">Idea 001 · Scan on open</p>
+    <h1 class="r r1">Most of the time, I open a payment app just to scan a QR.</h1>
+    <div class="r r2">
+      <p class="lbl">Yet every time</p>
+      <ol class="chain"><li>Open</li><li>Tap Scan</li><li class="pain">Wait for camera</li><li>Aim</li><li>Pay</li></ol>
+      <p class="note">~90% of my opens, by my own estimate.</p>
+    </div>
+    <div class="r r3">
+      <p class="lbl">The idea</p>
+      <p class="idea-l">Let the home screen scan for me. Its blurred background is the camera, so there’s no waiting. When a QR shows up, it offers to pay.</p>
+    </div>
+    <div class="r r4 try">
+      <p class="lbl">Try it →</p>
+      <p class="cap" id="cap">Allow the camera, then point it at any UPI QR.</p>
+      <p class="sim">No QR handy? <a id="sim">Simulate one</a></p>
+    </div>
+  </div>
+  <div class="pw" id="pw">
+<div class="phone" aria-label="Concept prototype in Paytm's style: home screen that scans on open">
+<div class="scr">
+
+  <!-- 1 + 2: home, scanning behind, sheet when found -->
+  <div class="view" id="v-home">
+    <div class="cam mirror" id="cam"><video id="vid" playsinline muted></video><div class="wash"></div><div class="ret" id="ret"></div></div>
+    <div class="sb"><span id="clock">9:41</span><span class="ic">▮▮▮ ◔ ▬</span></div>
+    <div class="topbar"><div class="av">S</div><div class="logo">pay<span>tm</span></div><div class="tb-i">⌕</div><div class="tb-i">🔔</div></div>
+    <div class="scanpill" id="pill"><i></i><span id="pilltxt">Starting camera…</span></div>
+    <div class="home-scroll">
+      <div class="card"><h5>UPI Money Transfer</h5>
+        <div class="grid4">
+          <div class="gi primary"><b>⌗</b>Scan &amp; Pay</div><div class="gi"><b>☏</b>To Mobile or Contact</div>
+          <div class="gi"><b>🏦</b>To Bank A/c or UPI ID</div><div class="gi"><b>⇄</b>To Self Account</div>
+        </div>
+        <div class="grid4" style="margin-top:12px">
+          <div class="gi"><b>₹</b>Balance &amp; History</div><div class="gi"><b>⤓</b>Receive Money</div>
+          <div class="gi"><b>◎</b>UPI Lite</div><div class="gi"><b>⋯</b>All Services</div>
+        </div></div>
+      <div class="promo"><b>Pay at any shop, any QR</b>Zero fees on UPI payments</div>
+      <div class="card"><h5>Recharges &amp; Bill Payments <small>View all</small></h5>
+        <div class="grid4"><div class="gi"><b>📱</b>Mobile Recharge</div><div class="gi"><b>💡</b>Electricity Bill</div><div class="gi"><b>📡</b>DTH</div><div class="gi"><b>🔥</b>Gas Cylinder</div></div></div>
+    </div>
+    <div class="navbar"><div>⌂<span>Home</span></div><div>☰<span>History</span></div>
+      <div class="scanbtn" id="scanbtn"><b>⌗</b><span>Scan</span></div><div>₹<span>Balance</span></div><div>⊞<span>Offers</span></div></div>
+
+    <div class="sheet" id="sheet" role="status" aria-live="polite">
+      <div class="grab"></div>
+      <div class="row"><div class="pa" id="s-av">R</div>
+        <div class="nm"><b id="s-name">—</b><em id="s-id">—</em><span class="vf" id="s-vf"></span></div>
+        <button class="x" id="s-x" aria-label="Not this one">×</button></div>
+      <div class="acts"><button class="btn ghost" id="s-no">Not now</button><button class="btn" id="s-go">Pay</button></div>
+    </div>
+  </div>
+
+  <!-- 3: pay -->
+  <div class="view pay" id="v-pay" hidden>
+    <div class="sb"><span class="clk">9:41</span><span class="ic">▮▮▮ ◔ ▬</span></div>
+    <div class="payhd"><button id="back" aria-label="Back">←</button>Pay</div>
+    <div class="payee"><div class="pa" id="p-av">R</div><b id="p-name">—</b><em id="p-id">—</em><span class="vf">✓ Name as per bank: <span id="p-bank">—</span></span></div>
+    <div class="amt">₹<input id="p-amt" inputmode="decimal" placeholder="0" aria-label="Amount"></div>
+    <div class="note"><span>+ Add a message</span></div>
+    <div class="from"><i>🏦</i><span>Pay from<em>State Bank of India ••4821</em></span>›</div>
+    <button class="btn" id="p-go">Pay Securely</button>
+  </div>
+
+  <!-- 4: success -->
+  <div class="view ok" id="v-ok" hidden>
+    <div class="sb"><span class="clk">9:41</span><span class="ic">▮▮▮ ◔ ▬</span></div>
+    <div class="mid"><div class="tick">✓</div><div class="big" id="o-amt">₹0</div><p id="o-to">Paid to —</p>
+      <div class="rcpt"><div><span>UPI Ref. No. (demo)</span><span id="o-ref">—</span></div><div><span>From</span><span>SBI ••4821</span></div></div></div>
+    <button class="btn" id="o-done">Done</button>
+  </div>
+
+</div></div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+<script>
+(() => {
+  const $ = id => document.getElementById(id), CAPS = {"start": "Allow the camera, then point it at any UPI QR.", "live": "1 \u00b7 Normal home. The blurred background is the camera, already scanning.", "found": "2 \u00b7 QR found. One tap to pay.", "bad": "2 \u00b7 That QR isn\u2019t a payment, so there\u2019s nothing to pay.", "pay": "3 \u00b7 Straight to paying.", "ok": "4 \u00b7 Paid. Two taps from opening the app.", "nocam": "Camera blocked. Allow it in the address bar, or simulate a QR."};
+  const TEST = "upi://pay?pa=ramesh.tea@okaxis&pn=Ramesh%20Tea%20Stall&am=40&cu=INR";
+  let stream = null, loopId = null, offered = null, ignored = new Set(), detector = null, cx = null;
+  try { if ("BarcodeDetector" in window) detector = new BarcodeDetector({ formats: ["qr_code"] }); } catch (e) {}
+  const cv = document.createElement("canvas");
+  const cap = k => $("cap").textContent = CAPS[k];
+  const show = v => ["v-home", "v-pay", "v-ok"].forEach(id => $(id).hidden = id !== v);
+  const pill = (t, live) => { $("pill").className = "scanpill" + (live ? " live" : ""); $("pilltxt").textContent = t; };
+
+  function parse(text) {
+    if (!/^upi:\/\/pay\?/i.test(text)) return { pay: false };
+    const q = new URLSearchParams(text.split("?")[1]);
+    return { pay: true, pa: q.get("pa") || "", pn: q.get("pn") || q.get("pa") || "Payee", am: q.get("am") || "" };
+  }
+  async function startCam() {
+    if (stream) return;
+    if (!navigator.mediaDevices?.getUserMedia) { pill("No camera", false); cap("nocam"); return; }
+    try { stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment", width: { ideal: 1280 } }, audio: false }); }
+    catch (e) { pill("Camera blocked", false); cap("nocam"); return; }
+    const v = $("vid"); v.srcObject = stream; await v.play();
+    $("cam").classList.toggle("mirror", stream.getVideoTracks()[0].getSettings().facingMode !== "environment");
+    $("cam").classList.add("live"); pill("Scanning for QR", true); cap("live"); loop();
+  }
+  function stopCam() { clearTimeout(loopId); if (stream) stream.getTracks().forEach(t => t.stop()); stream = null; $("vid").srcObject = null; $("cam").classList.remove("live", "found"); }
+  async function detect(v) {
+    if (detector) { const r = await detector.detect(v); return r[0] ? { text: r[0].rawValue, pts: r[0].cornerPoints, w: v.videoWidth, h: v.videoHeight } : null; }
+    if (!window.jsQR) return null;
+    cx = cx || cv.getContext("2d", { willReadFrequently: true });
+    const s = Math.min(1, 640 / v.videoWidth); cv.width = v.videoWidth * s; cv.height = v.videoHeight * s;
+    cx.drawImage(v, 0, 0, cv.width, cv.height);
+    const r = jsQR(cx.getImageData(0, 0, cv.width, cv.height).data, cv.width, cv.height, { inversionAttempts: "dontInvert" });
+    if (!r) return null; const L = r.location;
+    return { text: r.data, pts: [L.topLeftCorner, L.topRightCorner, L.bottomRightCorner, L.bottomLeftCorner], w: cv.width, h: cv.height };
+  }
+  function frame(res) {
+    const C = $("cam").getBoundingClientRect(), sc = Math.max(C.width / res.w, C.height / res.h);
+    const ox = (C.width - res.w * sc) / 2, oy = (C.height - res.h * sc) / 2, mir = $("cam").classList.contains("mirror");
+    const xs = res.pts.map(p => { const x = p.x * sc + ox; return mir ? C.width - x : x; }), ys = res.pts.map(p => p.y * sc + oy), r = $("ret");
+    r.style.left = Math.min(...xs) - 8 + "px"; r.style.top = Math.min(...ys) - 8 + "px";
+    r.style.width = Math.max(...xs) - Math.min(...xs) + 16 + "px"; r.style.height = Math.max(...ys) - Math.min(...ys) + 16 + "px";
+  }
+  async function loop() {
+    if (!stream) return; const v = $("vid");
+    if (v.readyState >= 2) { try { const res = await detect(v);
+      if (res && !ignored.has(res.text)) { $("cam").classList.add("found"); frame(res); offer(res.text); } else $("cam").classList.remove("found"); } catch (e) {} }
+    loopId = setTimeout(loop, 140);
+  }
+  function offer(text) {
+    if (offered && offered.raw === text) return;
+    const p = parse(text); offered = { ...p, raw: text };
+    if (p.pay) {
+      $("s-av").textContent = p.pn.trim()[0].toUpperCase(); $("s-name").textContent = p.pn; $("s-id").textContent = p.pa;
+      $("s-vf").className = "vf"; $("s-vf").textContent = "✓ Verified merchant"; $("s-go").setAttribute("aria-disabled", "false");
+      $("s-go").textContent = p.am ? "Pay ₹" + p.am : "Pay"; cap("found");
+    } else {
+      $("s-av").textContent = "!"; $("s-name").textContent = "Not a payment QR"; $("s-id").textContent = text.slice(0, 50);
+      $("s-vf").className = "vf warn"; $("s-vf").textContent = "⚠ This code can’t be paid"; $("s-go").setAttribute("aria-disabled", "true"); $("s-go").textContent = "Pay"; cap("bad");
+    }
+    pill("QR found", true); $("sheet").classList.add("show");
+  }
+  function dismiss() { if (offered) ignored.add(offered.raw); offered = null; $("sheet").classList.remove("show"); $("cam").classList.remove("found"); pill("Scanning for QR", true); cap(stream ? "live" : "start"); }
+  function home() { show("v-home"); offered = null; ignored.clear(); $("sheet").classList.remove("show"); startCam(); cap(stream ? "live" : "start"); }
+
+  $("sim").onclick = () => { if ($("v-home").hidden) home(); offer(TEST + "&tr=" + Date.now()); };
+  $("s-x").onclick = dismiss; $("s-no").onclick = dismiss;
+  $("s-go").onclick = () => {
+    if (!offered?.pay) return; stopCam();
+    $("p-av").textContent = offered.pn.trim()[0].toUpperCase(); $("p-name").textContent = offered.pn; $("p-bank").textContent = offered.pn.toUpperCase();
+    $("p-id").textContent = "UPI ID: " + offered.pa; $("p-amt").value = offered.am || ""; show("v-pay"); cap("pay");
+    if (!offered.am) setTimeout(() => $("p-amt").focus(), 60);
+  };
+  $("back").onclick = home;
+  $("p-go").onclick = () => {
+    const a = parseFloat($("p-amt").value); if (!(a > 0)) { $("p-amt").focus(); return; }
+    $("o-amt").textContent = "₹" + a.toLocaleString("en-IN"); $("o-to").textContent = "Paid to " + offered.pn;
+    $("o-ref").textContent = String(Math.floor(1e11 + Math.random() * 9e11)); show("v-ok"); cap("ok");
+  };
+  $("o-done").onclick = home;
+  const c = new Date(), hm = c.getHours() + ":" + String(c.getMinutes()).padStart(2, "0");
+  $("clock").textContent = hm; document.querySelectorAll(".clk").forEach(e => e.textContent = hm);
+  const ph = document.querySelector(".pw .phone");
+  const box = document.createElement("div"); box.className = "ph-box"; ph.before(box); box.append(ph);
+  const fit = () => { ph.style.transform = ""; const w = ph.offsetWidth, h = ph.offsetHeight, g = document.querySelector("main");
+    const s = window.matchMedia && matchMedia("(min-width: 861px)").matches ? Math.min(1, Math.max(.5, (g.clientHeight - 24) / 630)) : 1;
+    const k = s * 300 / w;  // same on-screen size as every idea phone
+    ph.style.transform = k !== 1 ? `scale(${k})` : ""; box.style.width = w * k + "px"; box.style.height = h * k + "px"; };
+  addEventListener("resize", fit); fit();
+  pill("Starting camera…", true); startCam();
+  window.addEventListener("pagehide", stopCam);
+})();
+</script>
+</main>
+<script>(()=>{
+const m=document.querySelector('main[data-rv]'); if(!m) return;
+/* progressive disclosure: evidence + our notes fold under each step */
+m.querySelectorAll('.step').forEach(st=>{
+  const items=[...st.querySelectorAll(':scope .ev, :scope .txt p')].filter(e=>e.classList.contains('ev')||e.querySelector('.our'));
+  if(items.length){const d=document.createElement('details');d.className='why';
+    d.innerHTML='<summary><span>Evidence &amp; notes</span></summary><div class="why-b"></div>';
+    items.forEach(e=>d.lastElementChild.appendChild(e)); st.appendChild(d);}
+  const pairs=[...st.querySelectorAll(':scope > .pair, :scope > .pair-h')];
+  const cut=pairs.filter(e=>e.classList.contains('pair'))[2];
+  if(cut){const rest=pairs.slice(pairs.indexOf(cut)-(cut.previousElementSibling?.classList.contains('pair-h')?1:0));
+    const n=rest.filter(e=>e.classList.contains('pair')).length; const b=document.createElement('button');
+    b.className='more-btn'; b.textContent='Show '+n+' more comparisons'; rest[0].before(b);
+    rest.forEach(e=>e.hidden=true); b.onclick=()=>{rest.forEach(e=>{e.hidden=false;e.classList.add('in');}); b.remove();};}
+});
+/* sticky step rail with scrollspy */
+const j=m.querySelector('.journey'); if(j){const h=m.querySelector('.head'); h.after(j); j.classList.add('rail');
+  const links=[...j.querySelectorAll('a')]; const map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+  const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.removeAttribute('aria-current'));
+    const a=map.get(e.target.id); if(a){a.setAttribute('aria-current','true'); j.scrollTo({left:a.offsetLeft-(j.clientWidth-a.offsetWidth)/2,behavior:'smooth'});}}}),{rootMargin:'-45% 0px -50% 0px'});
+  m.querySelectorAll('.step').forEach(s=>spy.observe(s));}
+})();</script>
+<script>(()=>{
+const m=document.querySelector('main[data-rv]'); if(!m || location.search.includes('static')) return;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+const sel='.head>*, .step-h, .txt>p, .shot, .half, .pinnotes li, .ev, .chart, .card, .pat, .box, .sources, .star, .gaps, .approach>.sub, .prose>*';
+const els=[...m.querySelectorAll(sel)];
+els.forEach(e=>e.classList.add('rv'));
+const io=new IntersectionObserver(es=>{es.forEach(en=>{if(!en.isIntersecting) return;
+  const sib=[...en.target.parentElement.children].filter(x=>x.classList.contains('rv'));
+  en.target.style.transitionDelay=Math.min(sib.indexOf(en.target),6)*70+'ms';
+  en.target.classList.add('in'); io.unobserve(en.target);});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+els.forEach(e=>io.observe(e));
+/* pin <-> note: hover a note to light its pin, and back */
+document.querySelectorAll('.step').forEach(st=>{
+  const pins=[...st.querySelectorAll('.pin')], notes=[...st.querySelectorAll('.pinnotes li')];
+  const key=el=>(el.querySelector?.('.num')||el).textContent.trim();
+  const on=(k,v)=>{pins.concat(notes).forEach(x=>{if(key(x)===k) x.classList.toggle('hot',v);});};
+  pins.concat(notes).forEach(x=>{x.addEventListener('mouseenter',()=>on(key(x),true));x.addEventListener('mouseleave',()=>on(key(x),false));});
+});})();</script>
+<footer>Built from <code>FINDINGS.md</code> and <code>notes/</code> by <code>build.py</code>. Every claim links to its source; grades say how strong it is.</footer>
+</body></html>
